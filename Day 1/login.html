@@ -1,0 +1,116 @@
+<!DOCTYPE>
+
+<html>
+<head>
+
+<!--Document Title-->
+<title>Login</title>
+
+
+<!--Style starts here-->
+<style>
+
+body {background-color: #000;
+	color: #000;
+	font-size: 14px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	background: url(images/img.jpg);
+}
+
+.container {width: 310px;
+background-color: #003366;
+margin: 0 auto;
+padding: 10px;
+margin-top: 10%;
+}
+
+h1{
+font-size: 20px;
+font-family: Arial;
+color: #99cfff;
+text-transform: uppercase;
+text-align: center;
+}
+
+form {width: 310px;
+margin: 0 auto;
+}
+
+form fieldset{
+border: solid 1px #0054b3;
+}
+
+form fieldset input[type="text"], input[type="password"] {
+background-color: #004899;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #006ce6;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 10px;
+width: 280px;
+}
+
+form fieldset input[type="submit"] {
+background-color: #001833;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #99cfff;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 280px;
+font-size: 14px;
+}
+
+form fieldset a {
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+text-decoration: none;
+font-size: 14px;
+color: #006ce6;
+}
+
+form fieldset a:hover {
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+text-decoration: none;
+font-size: 14px;
+color: #0078ff;
+}
+
+
+</style>
+
+<!--Style end here-->
+</head>
+
+<body>
+<section class="container">
+
+<form>
+<fieldset>
+<h1>Login</h1>
+<p>
+<!--Username-->
+<input type="text" required value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' ">
+</p>
+<!--password-->
+<p>
+<input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' ">
+</p>
+<p><a href="#">Forgot Password?</a></p>
+
+<!--Submit-->
+<p><input type="submit" value="submit"></p>
+</fieldset>
+</form>
+
+</section>
+</body>
+</html>
